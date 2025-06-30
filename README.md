@@ -5,26 +5,27 @@ Interactive loan simulator built with Marimo - multi-scenario comparison with re
 [![Marimo](https://img.shields.io/badge/Built%20with-Marimo-blue)](https://marimo.io)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-green)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-brightgreen)](https://gpenessot.github.io/marimo-loan-simulator/)
 
 ## 🚀 Features
 
-- **Multi-scenario comparison**: Compare up to 3 loan scenarios side by side
-- **Reactive interface**: Real-time updates when you modify parameters
-- **Interactive charts**: Capital remaining, cumulative interest, monthly breakdown
-- **Professional calculations**: Accurate amortization schedules with insurance
-- **Data export**: Generate CSV files for external analysis
+- **Universal budget compatibility**: From 100K€ studio to 1.5M€ luxury property
+- **Smart scenario comparison**: Reference vs additional down payment vs different rate/duration
+- **Intelligent suggestions**: Automatic down payment recommendations based on property price
+- **Real-time calculations**: Monthly payments, insurance, total cost, and income requirements
+- **Professional visualizations**: Evolution charts, cost comparisons, ROI analysis
 - **Instant deployment**: Transform notebook to web app with one command
-- **Pure Python**: Git-friendly storage, no JSON conflicts
+- **Git-friendly storage**: Pure Python files, no JSON conflicts
 
-## 📊 What You'll Build
+## 📊 What You'll Discover
 
-This simulator demonstrates Marimo's key capabilities:
+This simulator demonstrates real-world financial decision-making:
 
-- **Reactive programming**: Change a parameter, see all dependent calculations update instantly
-- **Native UI components**: Sliders, dropdowns, and forms without callback hell
-- **Seamless deployment**: Same code works as notebook and web application
-- **SQL integration**: Query and transform data with built-in SQL cells
-- **Professional interface**: Production-ready styling and layout
+- **Budget impact analysis**: How property price affects financing options
+- **Down payment ROI**: When is additional down payment profitable?
+- **Rate negotiation value**: Quantify the impact of 0.1% rate difference
+- **Duration trade-offs**: Balance monthly payments vs total cost
+- **Income requirements**: Automatic calculation for 30% and 33% debt ratios
 
 ## 🛠️ Quick Start
 
@@ -37,58 +38,67 @@ This simulator demonstrates Marimo's key capabilities:
 
 ```bash
 # Install Marimo with all dependencies
-pip install marimo[sql]
+pip install marimo pandas plotly numpy
 
 # Clone this repository
-git clone https://github.com/yourusername/marimo-loan-simulator.git
+git clone https://github.com/gpenessot/marimo-loan-simulator.git
 cd marimo-loan-simulator
 ```
 
 ### Running the Simulator
 
+**🌐 Live Demo:** [Try it online](https://gpenessot.github.io/marimo-loan-simulator/) (no installation required!)
+
 **As Interactive Notebook:**
 ```bash
-marimo edit loan_simulator.py
+marimo edit marimo_loan_simulator.py
 ```
 
 **As Web Application:**
 ```bash
-marimo run loan_simulator.py
+marimo run marimo_loan_simulator.py
 ```
 
 **As Python Script:**
 ```bash
-python loan_simulator.py
+python marimo_loan_simulator.py
 ```
 
 ## 🎯 Usage Examples
 
-### Basic Scenario Comparison
+### Universal Budget Scenarios
 
-1. Open the simulator in your browser
-2. Configure three different loan scenarios:
-   - **Scenario 1**: €300,000 loan, 25 years, 4.2% rate
-   - **Scenario 2**: €250,000 loan, 20 years, 3.8% rate  
-   - **Scenario 3**: €400,000 loan, 30 years, 4.8% rate
-3. Watch real-time updates across all charts and tables
-4. Export detailed amortization schedules as CSV
+**🏠 First-time buyer (150K€ studio):**
+- Property: €150,000
+- Down payment: €22,500 (15%)
+- Compare: 20 vs 25 years duration impact
 
-### Advanced Features
+**🏠 Family home (350K€):**
+- Property: €350,000  
+- Down payment: €52,500 (15%)
+- Compare: Extra €30K down payment ROI vs different rates
 
-- **Custom insurance rates**: Factor in mortgage insurance costs
-- **Down payment impact**: See how different down payments affect total cost
-- **Interactive charts**: Click and explore payment breakdowns
-- **Responsive design**: Works on desktop, tablet, and mobile
+**🏠 Investment property (600K€):**
+- Property: €600,000
+- Down payment: €120,000 (20%)
+- Compare: Tax optimization through duration and down payment strategies
+
+### Key Decision Points
+
+- **Down payment optimization**: See immediate impact on monthly payments and total cost
+- **Rate negotiation value**: Quantify how 0.2% rate reduction saves thousands
+- **Duration strategy**: Balance cash flow (monthly) vs total cost
+- **Income planning**: Know exactly what salary you need for each scenario
 
 ## 🔧 Code Structure
 
 ```
-loan_simulator.py           # Main Marimo notebook
-├── Parameter inputs        # Interactive sliders and forms
-├── Calculation engine     # Loan mathematics and amortization
-├── Visualization suite    # Multi-panel reactive charts
-├── Data export tools      # CSV generation functionality
-└── Documentation cells    # Usage guide and examples
+marimo_loan_simulator.py       # Main Marimo notebook
+├── Parameter inputs           # Interactive sliders and forms
+├── Calculation engine         # Loan mathematics and amortization
+├── Visualization suite        # Multi-panel reactive charts
+├── Data export tools          # CSV generation functionality
+└── Documentation cells       # Usage guide and examples
 ```
 
 ## 🌟 Why Marimo?
@@ -134,37 +144,43 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install marimo[sql] pytest black
 
 # Make your changes and test
-marimo edit loan_simulator.py
+marimo edit marimo_loan_simulator.py
 ```
 
 ## 📚 Learn More
 
+- **[Live Demo](https://gpenessot.github.io/marimo-loan-simulator/)**: Try the simulator online
 - **[Marimo Documentation](https://docs.marimo.io)**: Complete guides and API reference
 - **[Marimo Tutorial](https://marimo.io/tutorial)**: Interactive introduction
-- **[Examples Gallery](https://marimo.io/gallery)**: More Marimo applications
-- **[DataGyver Newsletter](https://glups.uno/HZ3vzW)**: Monthly data science insights
+- **[DataGyver Newsletter](https://datagyver.substack.com/)**: Monthly data science insights and tools
 
 ## 🎓 Educational Use
 
-This simulator is perfect for:
+Perfect for understanding:
 
-- **Teaching financial literacy**: Interactive loan calculations
-- **Learning reactive programming**: See dependency graphs in action
-- **Demonstrating modern data tools**: Marimo, Plotly, Pandas integration
-- **Workshop material**: Hands-on notebook development
+- **Financial literacy**: Interactive loan calculations and comparisons
+- **Reactive programming**: See dependency graphs in action with Marimo
+- **Modern data tools**: Integration of Marimo, Plotly, and Pandas
+- **Real estate finance**: Down payment strategies, rate impacts, duration trade-offs
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## 🙏 Acknowledgments
+
+- **[Marimo Team](https://marimo.io)**: For building an incredible reactive notebook platform
+- **[DataGyver Community](https://datagyver.substack.com/)**: For inspiration and practical data science insights
+- **Contributors**: Everyone who helps improve this financial education tool
+
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/marimo-loan-simulator/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/marimo-loan-simulator/discussions)
+- **Issues**: [GitHub Issues](https://github.com/gpenessot/marimo-loan-simulator/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/gpenessot/marimo-loan-simulator/discussions)
 - **Marimo Discord**: [Join the community](https://discord.gg/JE7nhX6mD8)
 
 ---
 
-**⭐ If this project helps you, please give it a star!**
+**⭐ If this tool helps with your real estate decisions, please give it a star!**
 
-Built with ❤️ using [Marimo](https://marimo.io) - The next generation of Python notebooks
+Built with ❤️ using [Marimo](https://marimo.io) - Making financial decisions more transparent and informed
